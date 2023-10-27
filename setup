@@ -14,4 +14,9 @@ if [ $scriptAction == 'UNINSTALL' ] ; then
   restoreActiveFile  /etc/venus/gpio_list
 fi
 
+
+if $filesUpdated ; then
+    restartGui=true
+fi
+
 endScript
