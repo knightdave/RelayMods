@@ -1,0 +1,7 @@
+MAJOR=254
+MINOR=0
+DEVNAME=gpiochip0
+OF_NAME=pinctrl
+OF_FULLNAME=/soc/pinctrl@1c20800
+OF_COMPATIBLE_0=allwinner,sun7i-a20-pinctrl
+OF_COMPATIBLE_N=1
