@@ -6,12 +6,14 @@ source "/data/SetupHelper/CommonResources"
 if [ $scriptAction == 'INSTALL' ] ; then
   logMessage "Installing additional relays"
   updateActiveFile  /etc/venus/gpio_list
+  updateActiveFile  /opt/victronenergy/dbus-systemcalc-py/delegates/relaystate.py
 fi
 
 
 if [ $scriptAction == 'UNINSTALL' ] ; then
   echo "Uninstalling relays"
   restoreActiveFile  /etc/venus/gpio_list
+  restoreActiveFile  /opt/victronenergy/dbus-systemcalc-py/delegates/relaystate.py
 fi
 
 
